@@ -1,26 +1,21 @@
-package net.shahed.business.bean;
+package net.shahed.controller.resource;
 
 import java.util.Date;
 import java.util.List;
 
+import org.springframework.hateoas.ResourceSupport;
+
 import net.shahed.business.bean.person.Person;
 
-public abstract class Product {
-	
-	private Long id;
+public class TrailerResource extends ResourceSupport{
+
+
+	private Long trailerId;
 	private Date availabilityEndDate;
 	private Date availabilityStartDate;
-//	private boolean plus;
-//	private Integer pricingPlan;
 	private String media;
 	private List<Person> cast;
 	
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
 	public Date getAvailabilityEndDate() {
 		return availabilityEndDate;
 	}
@@ -34,18 +29,6 @@ public abstract class Product {
 		this.availabilityStartDate = availabilityStartDate;
 	}
 	
-//	public boolean isPlus() {
-//		return plus;
-//	}
-//	public void setPlus(boolean plus) {
-//		this.plus = plus;
-//	}
-//	public Integer getPricingPlan() {
-//		return pricingPlan;
-//	}
-//	public void setPricingPlan(Integer pricingPlan) {
-//		this.pricingPlan = pricingPlan;
-//	}
 	public String getMedia() {
 		return media;
 	}
@@ -58,4 +41,12 @@ public abstract class Product {
 	public void setCast(List<Person> cast) {
 		this.cast = cast;
 	}
+	public Long getTrailerId() {
+		return trailerId;
+	}
+	public void setTrailerId(Long trailerId) {
+		this.trailerId = trailerId;
+	}
+	
+	
 }
