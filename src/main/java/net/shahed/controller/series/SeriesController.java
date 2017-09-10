@@ -1,11 +1,9 @@
-package net.shahed.controller;
+package net.shahed.controller.series;
 
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api")
-public class ShowController {
+public class SeriesController {
 
 /*
 	@RequestMapping(path = "/movie/{id}")
